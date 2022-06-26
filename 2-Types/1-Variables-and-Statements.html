@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Types</title>
+  </head>
+
+  <body>
+    <script>
+      /*
+       * Declare all 7 types.
+       */
+      var aString = "string";
+      var aNumber = 1;
+      var aObject = { type: "cat", name: "AJ" };
+      var aBinary = true;
+      var aNull = null;
+      var aUndefined = undefined;
+      var aSymbol = new Symbol("mySymbol");
+    </script>
+    <script>
+      /*
+       * Declare a variable named animal as `undefined`;
+       */
+      var animal; // variable declaration statement
+      console.log(animal); // function call statement
+    </script>
+    <script>
+      /*
+       * Declare a variable named animal with a default value of "cat".
+       */
+      var animal = "cat";
+      console.log(animal);
+    </script>
+    <script>
+      /*
+       * How to update the variable willbe10 from "1" to "10" using addition.
+       */
+      var willbe10 = 1;
+      console.log("willbe10 is", willbe10);
+
+      willbe10 = 1 + 9; // Don't use the declaration 'var' when updating.
+      console.log("willbe10 is now", willbe10);
+    </script>
+    <script>
+      /*
+       * const variables cannot be updated and will throw a JS error.
+       */
+      const const1 = 1;
+      console.log("const1 is", const1);
+      const1 = 1 + 9;
+      console.log("const1 is now", const1);
+    </script>
+    <script>
+      const cat = "AJ";
+      const dog = "KC";
+
+      /*
+       * Example of block statement
+       */
+      if (cat !== dog) {
+        console.log(`Hey ${cat} is different than ${dog}`);
+      }
+    </script>
+  </body>
+</html>
