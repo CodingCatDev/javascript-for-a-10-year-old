@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Types - Strings</title>
+  </head>
+  <body>
+    <script>
+      /*
+       * See 1-Variables-and-Statements.html for the 7 primitives
+       */
+      const string1 = "cat"; // A string literal
+      // prettier-ignore
+      const string2 = 'cat'; // A string literal
+      const string3 = `cat`; // A string template
+      const string4 = String("cat"); // A string literal
+      const string5 = new String("cat"); // A string object
+
+      console.log(string1, string2, string3, string4);
+      console.log("string literals are equal", string3 === string4);
+      console.log(
+        "string literal and object are not equal",
+        string4 === string5
+      );
+    </script>
+    <script>
+      const stringlength = "how long is this string?";
+      console.log(stringlength.length);
+    </script>
+  </body>
+</html>
